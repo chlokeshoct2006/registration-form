@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb://localhost:27017/registrationForm`, {});
+mongoose.connect(`mongodb+srv://chlokeshoct2006:${password}@cluster0.xnbfx7b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {});
 
 // registration schema
 const registrationschema = new mongoose.Schema({
